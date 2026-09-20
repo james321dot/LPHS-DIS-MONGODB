@@ -1,0 +1,7 @@
+# Cloudflare Worker deployment (not Pages).
+# Nitro generates main, compatibility settings, and the ASSETS binding in
+# .output/server/wrangler.json. Deploy that generated config with npm run deploy.
+name = "libon-private-high-school-dis-app"
+# MongoDB Node.js driver uses supported Node.js net/tls APIs in Workers.
+compatibility_date = "2026-09-20"
+compatibility_flags = ["nodejs_compat"]
